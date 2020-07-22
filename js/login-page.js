@@ -36,14 +36,14 @@ function showSlides() {
     for (var i = 0; i < slides.length; i++) {
         slides[i].style.visibility = "hidden";
         slides[i].childNodes[1].classList.remove("active");
-        slides[i].childNodes[7].classList.remove("show");
+        slides[i].childNodes[5].classList.remove("show");
     }
     slideIndex++;
     if (slideIndex > slides.length) {
         slideIndex = 1;
     }
     slides[slideIndex - 1].childNodes[1].classList.add("active");
-    slides[slideIndex - 1].childNodes[7].classList.add("show");
+    slides[slideIndex - 1].childNodes[5].classList.add("show");
 
     checkActive(slides[slideIndex - 1].childNodes[1], slides[slideIndex - 1]);
 }
